@@ -1,0 +1,12 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# SQLite database (optional to ignore)
+*.db
+
+# Mac OS system file (safe to include)
+.DS_Store

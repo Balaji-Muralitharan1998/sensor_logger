@@ -1,0 +1,27 @@
+
+services:
+  backend:
+    build: ./fast_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - db_volume:/app
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - db_volume:/data
+    depends_on:
+      - backend
+
+  simulator:
+    build: ./sensor_simulator
+    volumes:
+      - db_volume:/data
+    depends_on:
+      - backend
+
+volumes:
+  db_volume:
