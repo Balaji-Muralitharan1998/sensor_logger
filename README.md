@@ -67,13 +67,13 @@ docker-compose up --build
 
 - Auto-refresh every 1 seconds
 
-- ### Sidebar controls:
+    ### Sidebar controls:
 
-- - ⏸️ Pause simulator
+    - ⏸️ Pause simulator
 
-- - ▶️ Resume after pause
+    - ▶️ Resume after pause
 
-- - 🛑 Stop simulator entirely
+    - 🛑 Stop simulator entirely
 
 - Control is done using file-based signaling with PAUSE and STOP flags written to a shared volume.
 
@@ -131,10 +131,11 @@ sensor-logger/
 
 - Simulator container watches /data/ for these flags and acts accordingly.
 
+---
 
-### 7. Author
+## 7. Author
 
-## Balaji Muralitharan
+### Balaji Muralitharan
 
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/balaji-muralitharan)
 - [![GitHub](https://img.shields.io/badge/GitHub-balaji--muralitharan-black?logo=github)](https://github.com/Balaji-Muralitharan1998)
