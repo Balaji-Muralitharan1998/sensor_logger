@@ -102,7 +102,7 @@ sensor-logger/
 └── sensor_simulator/
     ├── Dockerfile
     ├── requirements.txt
-    └── sensor_simulator.py   
+    └── sensor_simulator.py   # Simulates fake sensor data
 
 ```
 
