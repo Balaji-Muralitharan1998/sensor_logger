@@ -88,6 +88,6 @@ filtered = df[df["device_id"] == selected_device]
 col1, col2 = st.columns(2)
 
 with col1:
-    st.line_chart(filtered.set_index("timestamp")[["temperature"]],x_label="Timestamp" , y_label= "Temperature")
+    st.line_chart(filtered.set_index("timestamp")[["temperature"]],x_label="Timestamp" , y_label= "Temperature (°C)")
 with col2:
-    st.line_chart(filtered.set_index("timestamp")[["pressure"]],x_label="Timestamp" , y_label= "Pressure")
+    st.line_chart(filtered.set_index("timestamp")[["pressure"]],x_label="Timestamp" , y_label= "Pressure (hPa)")
